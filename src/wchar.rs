@@ -52,7 +52,7 @@ impl CU16String {
     }
 }
 
-impl fmt::Show for CU16String {
+impl fmt::Debug for CU16String {
     #[inline]
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
         let s = if self.buf.is_null() {
